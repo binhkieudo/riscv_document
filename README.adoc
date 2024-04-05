@@ -5,7 +5,24 @@ Write the absctract here
 
 = Building Documents
 
+Before building your documents, it requires to install the dependencies.
+
+```shel
+apt install ruby-dev libcairo2-dev libpango1.0-dev libxml2-dev
+```
+
+The `makefile` internally uses asciidoctor so the packages required by the
+`makefile` need to be installed on the build system using.
+
+```shel
+make install-debs
+```
+
 The final specification in form of PDF and HTML can be generated using
-`make` command. The `makefile` internally uses asciidoctor so the packages
-required by the `makefile` need to be installed on the build system using
-`make install-debs`.
+`make` command.
+
+```shel
+make
+```
+
+
